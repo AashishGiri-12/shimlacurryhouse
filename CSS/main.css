@@ -1,0 +1,527 @@
+.info {
+    background-color: #71697A;
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/body-b.jpg)center/cover fixed no-repeat;
+}
+
+.header-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.primary-color {
+    color: #E2C044;
+}
+
+.menuu {
+    color: #D17B0F;
+}
+
+.info h2 {
+    word-spacing: 0.6rem;
+}
+
+.info a {
+    transition: color 2s ease-in-out;
+}
+
+.info a:hover {
+    color: #523A34;
+}
+
+/*hhhhheeeeeaaaaadddddeeeeerrrrr*/
+#header {
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ban.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.height-90 {
+    min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+    border-top: 6px dotted #E2C044;
+    border-bottom: 6px dotted #E2C044;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s opacity:0;
+    animation-fill-mode: forwards
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.main-btn {
+    color: #E2C044;
+    font-size: 2rem;
+    border: 2px solid #E2C044;
+    transition: all 1s ease-in-out;
+}
+
+.menu-btn {
+    color: #D17B0F;
+    font-size: 2rem;
+    border: 2px solid #D17B0F;
+    transition: all 1s ease-in-out;
+}
+
+.menu-btn:hover {
+    color: #FFFFFF;
+    border: 2px solid #D17B0F;
+    background: #D17B0F;
+}
+
+.main-btn:hover {
+    color: #000000;
+    border: 2px solid #c9c1ac;
+    background: #c9c1ac;
+}
+
+.curry-btn {
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s opacity:0;
+    animation-fill-mode: forwards
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(- 30px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.header-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link {
+    color: #523A34;
+}
+
+@keyframes fromBottom {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+/*menuuuuuuuuuuuuuuuuuuuuuuuui*/
+#menu-i {
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/menu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*##############Nav-bar##############*/
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+
+.navbar-background {
+    padding: 5px 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    transition: all 1s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #E2C044;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 23px;
+
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-btn {
+    background: transparent;
+    color: #E2C044;
+    border: 2px solid #E2C044;
+    transition: all 2s ease;
+
+}
+
+.nav-btn:hover {
+    color: #ffffff;
+    border: 2px solid #E2C044;
+    transform: rotate(10deg);
+}
+
+.toggler-btn {
+    border: 2px solid #E2C044;
+    padding: 5px;
+    transition: all 2s ease;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #E2C044;
+    transition: all 0.5s ease
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
+/* mmmmmmeeeeeennnnuuuuu---iiittteeemmmmsss*/
+.item-container {
+
+    position: relative;
+    /*for the link*/
+    overflow: hidden;
+    /*for zoom-in*/
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+
+    transition: all 2s ease;
+    /*for hovering*/
+
+}
+
+.item-img {
+    transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+    transform: scale(1.2);
+    /*for this class to be in effect*/
+    opacity: 0.5;
+    /*image gets dark*/
+}
+
+.item-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*moves 50% of actual item to neg 50 X and neg 50 Y*/
+    color: #E2C044;
+    font-size: 2rem;
+    border-top: 3px solid #E2C044;
+    border-bottom: 3px solid #E2C044;
+    transition: all 2s ease;
+    opacity: 0;
+    /*link to be visible*/
+
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover {
+    color: #c9c1ac;
+    border: 3px solid #c9c1ac;
+    background: #c9c1ac;
+    color: #523A34;
+}
+
+.item-container:hover {
+    outline: 10px solid #E2C044;
+    outline-offset: 0.8rem;
+    /*gives actual zoom-in background a hovering. if neg it goes inside*/
+}
+
+/*mmmmmeeeeennnnnnnuuuuuuuiiiiitttttteeeeemmmmm */
+#menu {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/ban2.jpg)center/cover fixed no-repeat;
+
+}
+
+.special {
+    border: 3px solid #D17B0F;
+    position: relative;
+}
+
+.special-text {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #D17B0F;
+    padding: 0 0.4rem;
+
+}
+
+/*################################about###############*/
+.about-pictures {
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.8;
+
+}
+
+.img-1 {
+    left: 0%;
+    top: 0%;
+}
+
+.img-2 {
+    left: 20%;
+    top: 20%;
+    z-index: 10%;
+}
+
+.img-3 {
+    left: 40%;
+    top: 45%;
+    z-index: 20%;
+}
+
+.img-4 {
+    left: 40%;
+    top: 0%;
+}
+
+.img-5 {
+    left: 0%;
+    top: 45%;
+}
+
+.about-image:hover {
+    outline: 10px solid #E2C044;
+    outline-offset: 0.8rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+
+}
+
+.about-pictures:hover .about-image:not(:hover) {
+    opacity: 0.5;
+}
+
+/*###############review-img##############*/
+
+.review-item {
+    background: rgba(0, 0, 0, 0.4);
+    clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.r-font {
+    color: white;
+}
+
+/*#####################team###########*/
+.team-icons a {
+    color: #3b5998;
+    transition: all 2s ease-in-out;
+}
+
+.team-icons a:hover {
+    color: #242424;
+    transform: translateY(-5px);
+}
+
+/*#################contact#############*/
+.height-60 {
+    min-height: 60vh;
+}
+
+#contact .card {
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 2s ease;
+}
+
+#contact .card:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+    color: #E2C044;
+}
+
+#contact .input-group-text {
+    background: #E2C044;
+    border-color: #E2C044;
+    color: #242424;
+}
+
+#contact .card input {
+    color: #606060;
+}
+
+#contact .card input::placeholder {
+    color: #606060;
+}
+
+.contact-btn {
+    color: #E2C044;
+    border-color: #E2C044;
+    background: transparent;
+    transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover {
+    background: #c9c1ac;
+    color: black;
+    border-color: #E2C044;
+
+    transition: all 2s ease-in-out;
+}
+
+.contact-item {
+    background: rgba(0, 0, 0, 0.4);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 2s ease;
+}
+
+.contact-item:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*##################Footer#########*/
+.i-footer {
+    background: black;
+    transition: all 2s ease;
+}
+
+.i-footer:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 2s ease;
+}
+
+.i-footer h2 {
+    word-spacing: 0.6rem;
+}
+
+.i-footer a {
+    transition: color 2s ease-in-out;
+}
+
+.i-footer a:hover {
+    color: #F7F7F2;
+}
+
+#back-to-top {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+
+}
+/* menuu*/
+#Entree {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/ban2.jpg)center/cover fixed no-repeat;
+
+}
+#Chicken {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-1.jpg)center/cover fixed no-repeat;
+
+}
+#Lamb {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-2.jpg)center/cover fixed no-repeat;
+
+}
+#Beef {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-3.jpg)center/cover fixed no-repeat;
+
+}
+#Sea-food {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-4.jpg)center/cover fixed no-repeat;
+
+}
+#Vegetarain {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-5.jpg)center/cover fixed no-repeat;
+
+}
+#Rice-dishes {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-6.jpg)center/cover fixed no-repeat;
+
+}
+#roties {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-7.jpg)center/cover fixed no-repeat;
+
+}
+#Accompaniments {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-8.jpg)center/cover fixed no-repeat;
+
+}
+#Dessert {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-9.jpg)center/cover fixed no-repeat;
+
+}
+#Beverage {
+    background: linear-gradient(rgba(255,255, 255, 0.7), rgba(255,255, 255, 0.7)), url(../img/menu-ban-10.jpg)center/cover fixed no-repeat;
+
+}
